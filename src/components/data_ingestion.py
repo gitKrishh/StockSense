@@ -43,16 +43,17 @@ try:
         # Display the last 5 rows of the downloaded data
         print("\n--- Sample of Downloaded Data ---")
         print(data.tail())
+        print(data.columns)
 
         # The columns are multi-level. For example, to access the 'Close' price for Reliance:
         # print(data['Close']['RELIANCE.NS'].tail())
 
         # Save the entire DataFrame to a CSV file
-        output_filename = "indian_stocks_10_years.csv"
-        data.to_csv(output_filename)
+        data_output = "indian_stocks_10_years.csv"
+        data.to_csv(data_output)
 
-        print(f"\n✅ Data successfully downloaded and saved to '{output_filename}'")
+        print(f"\n Data successfully downloaded and saved to '{data_output}'")
+
 
 except Exception as e:
     print(f"An error occurred: {e}")
-
