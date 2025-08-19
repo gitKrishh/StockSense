@@ -1,2 +1,7 @@
+ipykernal
 pandas
 yfinance
+matplotlib
+seaborn
+numpy
+scikit-learn
