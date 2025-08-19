@@ -25,7 +25,7 @@ def load_all_data(data_dir: str) -> pd.DataFrame:
 
     print("Successfully created multi-index DataFrame.")
     
-#checking the missing values
+ #checking the missing values
 
     missing_values = combined_df.isnull().sum()
     if missing_values.sum() > 0:

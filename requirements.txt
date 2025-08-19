@@ -1,4 +1,4 @@
-ipykernal
+ipykernel
 pandas
 yfinance
 matplotlib
